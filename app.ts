@@ -14,6 +14,8 @@ mongoose.connect(url).then(()=>{
     console.log("DB failed");
 });
 const peopleRouter = require("./routes/people");
+app.use(express.json());
+app.use(express.urlencoded({extended:false}));
 app.use("/people" , peopleRouter);
 app.get("/",async (req:any,res:any)=>{
     try{
@@ -24,8 +26,7 @@ app.get("/",async (req:any,res:any)=>{
         return res.status(500).json({msg:"Something went wrong :("});
     }
   });
-app.use(express.json());
-app.use(express.urlencoded({extended:false}));
+
 
 
 
