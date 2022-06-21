@@ -4,7 +4,7 @@ import express from "express";
 const router = express.Router();
 
 
-  router.get("/",async (req:any,res:any)=>{
+  router.get("/",async (req:Express.Request,res:Express.Response)=>{
     try{
         //retrieving all people data from the database
         const allPeople = await People.find();
