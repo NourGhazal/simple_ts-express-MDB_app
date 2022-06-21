@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import mongoose, {model, Schema} from 'mongoose';
 
 const PeopleSchema = new Schema({

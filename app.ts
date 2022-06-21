@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import Express from 'express';
 import express from 'express';
 import mongoose from 'mongoose';

@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable new-cap */
 import People from '../models/People';
 import Express from 'express';
 import express from 'express';
